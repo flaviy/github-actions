@@ -30,4 +30,4 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, windows!
     - name: Error step
-      run: does-not-exist
+      run: does-not-exist-123
