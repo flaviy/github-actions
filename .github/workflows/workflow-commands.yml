@@ -22,10 +22,7 @@ jobs:
           echo "::endgroup::"
       - name: Masking a value
         run: echo "::add-mask::Secret String"
-      - name: Echo a secret
-        run: | 
-          echo "Secret String"
-          echo "::endmask::"
-
-      - name: Echo a secret
+      - name: Echo masked secret
+        run: echo "Secret String"
+      - name: Echo unmasked secret
         run: echo "Secret String"
