@@ -25,4 +25,4 @@ jobs:
       - name: Echo masked secret
         run: echo "Secret String"
       - name: Echo unmasked secret
-        run: echo "Different String
+        run: echo "Different String"
