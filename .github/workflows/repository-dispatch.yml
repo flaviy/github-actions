@@ -1,9 +1,13 @@
 name: Repository Dispatch
 on:
   repository_dispatch:
+    types: [build]
 
 jobs:
   log-info:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $GITHUB_EVENT_NAME
+      - name: Log Client Payload Env Variable
+        run: echo ${{ github.event.client_payload.env }}
+      - name: Log Github event name
+        run: echo $GITHUB_EVENT_NAME
